@@ -1,0 +1,106 @@
+        /* training flexbox haut de la carte*/
+        
+        body {
+            margin: 0;
+            background: #f1f1f1;
+        }
+        
+        #flexcontainer {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .treecard {
+            width: 300px;
+            height: 520px;
+            margin: 30px;
+            position: relative;
+            transform: 0.2s ease-in;
+            box-shadow: 0px 10px 30px black;
+            transition: all 0.2 ease-in;
+        }
+        
+        .treecard:hover {
+            transform: scale(1.1);
+        }
+        
+        .header {
+            height: 200px;
+            width: 300px;
+            position: relative;
+            background: rgba(137, 196, 244, 0.5);
+        }
+        
+        .header h2 {
+            margin: 0;
+            position: relative;
+            top: 130px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        #spanprix {
+            font-size: 40px;
+        }
+        
+        .price {
+            height: 120px;
+            width: 300px;
+            background: rgba(137, 196, 244, 0.5);
+            clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+            position: absolute;
+            top: 0;
+        }
+        
+        .price h1 {
+            margin: 0;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 30px;
+            position: relative;
+            top: 30px;
+        }
+        /* training flexbox bas de la carte*/
+        
+        .detail {
+            background: white;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            transition: all 0.2 ease-in;
+        }
+        
+        #bouton {
+            background: white;
+            height: 80px;
+        }
+        
+        #bouton a {
+            text-decoration: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            height: 50px;
+            width: 120px;
+            display: block;
+            margin: auto;
+            text-align: center;
+            line-height: 50px;
+            position: relative;
+            top: 10px;
+            border-radius: 30px;
+            border: 1px solid blue;
+            transition: all 0.2 ease-in;
+        }
+        /* hover carte */
+        
+        #bouton a:hover {
+            background: rgba(71, 108, 143, 0.8);
+            color: white;
+        }
+        
+        .detail:hover {
+            background: rgba(36, 139, 224, 0.199);
+        }
